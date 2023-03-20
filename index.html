@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+
+    <form method="post" action="/">
+        <label for="name"> <b>Name:*</b> </label> <br>
+        <input type="text" name="name" id="name"> <br>
+        <br>
+
+        <label for="surname"> <b>Surname:*</b> </label> <br>
+        <input type="text" name="surname" id="surname"><br>
+        <br>
+
+        <label for="email"> <b>Email:*</b> </label> <br>
+        <input type="email" name="email" id="email" required minlength="5" maxlength="50"><br>
+        <br>
+
+        <label for="pass"> <b>Password:*</b> </label> <br>
+        <input type="password" name="password" id="pass" required minlength="6" maxlength="20"><br>
+        <br>
+
+        <label for="birthday"> <b>Select your birthday:*</b> </label> <br>
+        <input type="date" id="birthday" name="birthday"><br>
+        <br>
+
+        <label for="time"> <b>How many hours per day do you spend on the Internet?:*</b> </label> <br>
+        <input type="number" name="time" id="time" min="0" max="24"><br>
+        <br>
+
+        <label for="male"> <b>Male</b> </label>
+        <input type="radio" name="sex" id="male">
+        <label for="female"> <b>Female</b> </label>
+        <input type="radio" name="sex" id="female"><br>
+        <br>
+
+        <label for="country"><b>Country:*</b></label><br>
+        <select name="country" id="country" required>
+        <option value="country" hidden>Chose a country…</option>
+        <option value="country">Ukraine</option>
+        <option value="country">Georgia</option>
+        <option value="country">Portugal</option>
+        <option value="country">Poland</option>
+        </select><br>
+        <br>
+
+        <label for="photo"> <b>Photo:</b> </label><br>
+        <input type="file" name="photo" id="photo" accept="image/png, image/jpeg"><br>
+        <br>
+
+        <label for="color"> <b>Chose the main color of your profile:</b> </label> <br>
+        <input type="color" id="color" name="color"
+        value="#fff000"><br>
+        <br>
+
+        <label for="themes"> <b>Chose the themes your are interested in:</b> </label><br>
+        <label for="it"> <b>IT</b> </label>
+        <input type="checkbox" name="it" id="it">
+        <label for="sport"> <b>Sport</b> </label>
+        <input type="checkbox" name="sport" id="sport">
+        <label for="books"> <b>Books</b> </label>
+        <input type="checkbox" name="books" id="books">
+        <label for="art"> <b>Art</b> </label>
+        <input type="checkbox" name="art" id="art"><br>
+        <br>
+        <label for="text"> <b>Add your comment:</b> </label> <br>
+        <textarea name="text" id="text" cols="30" rows="5"></textarea><br>
+        <br>
+
+        <input type="reset" value="reset">
+        <button type="submit"> submit </button>
+    </form>
+
+</div>
+
+</body>
+</html>
